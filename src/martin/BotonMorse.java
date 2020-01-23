@@ -11,6 +11,8 @@ public class BotonMorse extends Button {
     private double duracionPulsacionCorta = 200;
     private double duracionPulsacionLarga = 2000;
 
+    LetraResultado letraResultado;
+
     private ArrayList<LetraResultado> listaLetras = new ArrayList<>();
 
     private double inicioPresion;
@@ -104,6 +106,14 @@ public class BotonMorse extends Button {
 
     public void addListaLetras(LetraResultado letraResultado){//añadir a la lista
         listaLetras.add(letraResultado);
+    }
+
+    public LetraResultado getLetraResultado() {
+        return letraResultado;
+    }
+
+    public void setLetraResultado(LetraResultado letraResultado) {
+        this.letraResultado = letraResultado;
     }
 
     public double getDuracionPulsacionCorta() {
